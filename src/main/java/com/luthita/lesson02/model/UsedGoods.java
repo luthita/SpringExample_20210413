@@ -1,4 +1,4 @@
-package com.lesson02.model;
+package com.luthita.lesson02.model;
 
 import java.util.Date;
 

@@ -1,4 +1,4 @@
-package com.config;
+package com.luthita.config;
 
 import javax.sql.DataSource;
 
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
-@MapperScan(basePackages = "com.lesson02.*")
+@MapperScan(basePackages = "com.luthita.*")
 @Configuration
 public class DatabaseConfig {
 	@Bean

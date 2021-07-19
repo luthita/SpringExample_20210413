@@ -1,10 +1,10 @@
-package com.lesson02.dao;
+package com.luthita.lesson02.dao;
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.lesson02.model.UsedGoods;
+import com.luthita.lesson02.model.UsedGoods;
 
 @Repository
 public interface UsedGoodsDAO {

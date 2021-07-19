@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+ <mapper namespace="com.luthita.lesson03.dao.ReviewDAO">
+ 	<select id="selectReview" parameterType="int" resultType="com.luthita.lesson03.model.Review">
+ 		SELECT 
+ 			`id`
+ 			,`storeName`
+ 			,`menu`
+ 			,`userName`
+ 			,`point`
+ 			,`review`
+ 			,`createdAt`
+ 			,`updatedAt`
+ 		FROM
+ 			`review`
+ 		WHERE
+ 			`id` = #{id}
+ 	</select>
+ 	
+ 	<insert id="insertReview" parameterType="com.luthita.lesson03.model.Review" >
+ 		INSERT INTO `review`
+ 		(
+ 			`storeName`
+ 			,`menu`
+ 			,`userName`
+ 			,`point`
+ 			,`review`
+ 			,`createdAt`
+ 			,`updatedAt`
+ 		)
+ 		VALUES
+ 		(
+ 			#{storeName}
+ 			, #{menu}
+ 			, #{userName}
+ 			, #{point}
+ 			, #{review}
+ 			, NOW()
+ 			, NOW()
+ 		)
+
+ 	</insert>
+ 	
+ 	<!-- 필드들을 따로따로 넣기 -->
+ 	<insert id="insertReviewAsField" parameterType="com.luthita.lesson03.model.Review" >
+ 		INSERT INTO `review`
+ 		(
+ 			`storeName`
+ 			,`menu`
+ 			,`userName`
+ 			,`point`
+ 			,`review`
+ 			,`createdAt`
+ 			,`updatedAt`
+ 		)
+ 		VALUES
+ 		(
+ 			#{storeName}
+ 			, #{menu}
+ 			, #{userName}
+ 			, #{point}
+ 			, #{review}
+ 			, NOW()
+ 			, NOW()
+ 		)
+
+ 	</insert>
+ </mapper>

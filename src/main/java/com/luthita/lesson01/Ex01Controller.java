@@ -1,4 +1,4 @@
-package com.lesson01;
+package com.luthita.lesson01;
 
 import java.util.HashMap;
 import java.util.Map;
