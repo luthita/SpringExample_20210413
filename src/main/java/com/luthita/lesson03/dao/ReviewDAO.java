@@ -18,4 +18,11 @@ public interface ReviewDAO {
 			@Param("userName") String userName,
 			@Param("point") double point,
 			@Param("review") String review);
+	
+	// 파라미터가 여러개인 경우 @Param 필요!!
+	public int updateReview(
+			@Param("id") int id,
+			@Param("review") String review);
+	
+	public int deleteReviewById(int id);
 }
