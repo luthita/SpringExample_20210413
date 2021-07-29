@@ -32,7 +32,7 @@ public class NewUserController {
 		// request -> response
 		
 		// TODO db insert
-		newUserBO.insertNewUser(name, yyyymmdd, email, introduce);
+		newUserBO.addNewUser(name, yyyymmdd, email, introduce);
 		
 		// 결과 jsp
 		return "lesson04/afterAddUser";
