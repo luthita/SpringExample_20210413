@@ -42,7 +42,7 @@
 	</div>
 	<script>
 		$(document).ready(function(){
-			// (1) jQuery의 submit 기능 이용하기
+			/* // (1) jQuery의 submit 기능 이용하기
 			$('#addForm').on('submit', function(e){
 				e.preventDefault();	// 기본으로 submit 동작하는 것을 막는다.
 				
@@ -63,7 +63,7 @@
 				
 				// 여기까지 도달하면 submit된다.
 			});
-		
+		 */
 			$('#aBtn').on('click', function(e){
 				//e.preventDefault();	// 기본으로 페이지 상단으로 올라가는 것을 막는다.
 			});
